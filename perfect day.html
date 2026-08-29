@@ -1,0 +1,1763 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Perfect Day | 404 Boys Not Found</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+
+      background: linear-gradient(
+        135deg,
+        #ffe4f1 0%,
+        #f3e8ff 45%,
+        #e0f0ff 100%
+      );
+
+      color: #5b4b6a;
+
+      overflow-x: hidden;
+
+      position: relative;
+
+      min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+    }
+
+
+    /* =====================================
+       FLOATING DECORATIONS
+    ===================================== */
+
+    .float-item {
+      position: fixed;
+
+      font-size: 1.8rem;
+
+      opacity: 0.7;
+
+      pointer-events: none;
+
+      z-index: 0;
+
+      animation:
+        floatUp 8s ease-in-out infinite,
+        twinkle 3s ease-in-out infinite;
+    }
+
+    @keyframes floatUp {
+
+      0% {
+        transform:
+          translateY(0)
+          translateX(0)
+          rotate(0deg);
+      }
+
+      50% {
+        transform:
+          translateY(-40px)
+          translateX(15px)
+          rotate(15deg);
+      }
+
+      100% {
+        transform:
+          translateY(0)
+          translateX(0)
+          rotate(0deg);
+      }
+
+    }
+
+    @keyframes twinkle {
+
+      0%,
+      100% {
+        opacity: 0.3;
+      }
+
+      50% {
+        opacity: 0.9;
+      }
+
+    }
+
+    .f1 {
+      top: 10%;
+      left: 5%;
+      animation-duration: 7s, 2.5s;
+    }
+
+    .f2 {
+      top: 20%;
+      left: 85%;
+      animation-duration: 9s, 3s;
+    }
+
+    .f3 {
+      top: 60%;
+      left: 10%;
+      animation-duration: 6s, 4s;
+    }
+
+    .f4 {
+      top: 75%;
+      left: 90%;
+      animation-duration: 8s, 3.5s;
+    }
+
+    .f5 {
+      top: 40%;
+      left: 50%;
+      animation-duration: 10s, 2.8s;
+    }
+
+    .f6 {
+      top: 85%;
+      left: 45%;
+      animation-duration: 7.5s, 3.2s;
+    }
+
+    .f7 {
+      top: 5%;
+      left: 45%;
+      animation-duration: 9.5s, 2.6s;
+    }
+
+    .f8 {
+      top: 55%;
+      left: 78%;
+      animation-duration: 6.5s, 3.8s;
+    }
+
+
+    /* =====================================
+       PAGE
+    ===================================== */
+
+    .page-wrap {
+
+      position: relative;
+
+      z-index: 1;
+
+      max-width: 1000px;
+
+      margin: 0 auto;
+
+      padding: 60px 24px 80px;
+    }
+
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .site-header {
+
+      text-align: center;
+
+      margin-bottom: 40px;
+    }
+
+    .site-header h1 {
+
+      font-size: 2.6rem;
+
+      color: #a05c9e;
+
+      text-shadow:
+        0 2px 12px
+        rgba(255, 182, 217, 0.7);
+
+      line-height: 1.3;
+    }
+
+    .subtitle {
+
+      font-family:
+        'Dancing Script',
+        cursive;
+
+      font-size: 1.6rem;
+
+      color: #c087c9;
+
+      margin-top: 6px;
+    }
+
+    .team-badge {
+
+      display: inline-block;
+
+      margin-top: 22px;
+
+      padding: 10px 26px;
+
+      background:
+        linear-gradient(
+          120deg,
+          #ffd6ec,
+          #e6d5ff
+        );
+
+      border-radius: 50px;
+
+      font-weight: 700;
+
+      color: #7a4a8c;
+
+      box-shadow:
+        0 4px 15px
+        rgba(200, 150, 220, 0.4);
+
+      border:
+        2px dashed #d9a7e0;
+
+      letter-spacing: 0.5px;
+
+      animation:
+        pulseGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+
+      0%,
+      100% {
+        box-shadow:
+          0 4px 15px
+          rgba(200, 150, 220, 0.4);
+      }
+
+      50% {
+        box-shadow:
+          0 4px 25px
+          rgba(255, 182, 217, 0.8);
+      }
+
+    }
+
+
+    /* =====================================
+       STORY SECTION
+    ===================================== */
+
+    .story-section {
+
+      margin-top: 70px;
+    }
+
+    .section-title {
+
+      text-align: center;
+
+      font-size: 1.8rem;
+
+      color: #a05c9e;
+
+      margin-bottom: 34px;
+    }
+
+    .story-grid {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 26px;
+    }
+
+    .story-card {
+
+      background:
+        rgba(255, 255, 255, 0.75);
+
+      backdrop-filter: blur(6px);
+
+      border-radius: 28px;
+
+      padding: 28px 24px;
+
+      width: 280px;
+
+      box-shadow:
+        0 8px 25px
+        rgba(190, 150, 210, 0.3);
+
+      text-align: center;
+
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.6);
+    }
+
+    .story-card:hover {
+
+      transform:
+        translateY(-10px)
+        scale(1.03);
+
+      box-shadow:
+        0 16px 35px
+        rgba(255, 182, 217, 0.55);
+    }
+
+    .story-icon {
+
+      font-size: 2.4rem;
+
+      margin-bottom: 12px;
+
+      display: block;
+    }
+
+    .story-card h3 {
+
+      color: #b06bb5;
+
+      margin-bottom: 10px;
+
+      font-size: 1.2rem;
+    }
+
+    .story-card p {
+
+      font-size: 0.95rem;
+
+      line-height: 1.5;
+
+      color: #6b5876;
+    }
+
+
+    /* =====================================
+       BUTTONS
+    ===================================== */
+
+    .button-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 18px;
+
+      margin-top: 50px;
+    }
+
+    .pastel-btn {
+
+      padding: 14px 30px;
+
+      border: none;
+
+      border-radius: 50px;
+
+      font-family:
+        'Quicksand',
+        sans-serif;
+
+      font-weight: 700;
+
+      font-size: 1rem;
+
+      cursor: pointer;
+
+      color: #7a4a8c;
+
+      background:
+        linear-gradient(
+          120deg,
+          #ffe0f0,
+          #f0e0ff
+        );
+
+      box-shadow:
+        0 6px 15px
+        rgba(220, 180, 230, 0.5);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .pastel-btn:hover {
+
+      transform:
+        translateY(-6px)
+        scale(1.06);
+
+      box-shadow:
+        0 12px 25px
+        rgba(255, 182, 217, 0.7);
+
+      background:
+        linear-gradient(
+          120deg,
+          #ffd0e8,
+          #e0cfff
+        );
+    }
+
+
+    /* =====================================
+       GALLERY
+    ===================================== */
+
+    .gallery-section {
+
+      margin-top: 80px;
+
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+
+      color: #a05c9e;
+    }
+
+    .gallery-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(180px, 1fr)
+        );
+
+      gap: 22px;
+
+      margin-top: 30px;
+    }
+
+    .gallery-card {
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff0f8,
+          #f2e8ff
+        );
+
+      border-radius: 22px;
+
+      height: 180px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-direction: column;
+
+      box-shadow:
+        0 6px 18px
+        rgba(200, 170, 220, 0.35);
+
+      border:
+        2px solid
+        rgba(255, 255, 255, 0.8);
+
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+      cursor: pointer;
+    }
+
+    .gallery-card:hover {
+
+      transform:
+        rotate(-2deg)
+        scale(1.05);
+
+      box-shadow:
+        0 14px 28px
+        rgba(255, 182, 217, 0.6);
+    }
+
+    .gallery-card span.emoji {
+
+      font-size: 2.2rem;
+
+      margin-bottom: 8px;
+    }
+
+    .gallery-card span.label {
+
+      font-size: 0.85rem;
+
+      color: #8a6b93;
+
+      font-weight: 600;
+    }
+
+
+    /* =====================================
+       PROJECT SECTION
+    ===================================== */
+
+    .souvenir-section {
+
+      margin-top: 80px;
+
+      text-align: center;
+
+      padding: 40px 20px;
+
+      background:
+        rgba(255, 255, 255, 0.5);
+
+      border-radius: 30px;
+
+      box-shadow:
+        0 10px 30px
+        rgba(200, 170, 220, 0.3);
+    }
+
+    .souvenir-section h2 {
+
+      color: #a05c9e;
+
+      margin-bottom: 14px;
+    }
+
+    .souvenir-section p {
+
+      max-width: 500px;
+
+      margin: 0 auto 22px;
+
+      font-size: 0.95rem;
+
+      color: #6b5876;
+    }
+
+    .link-badge {
+
+      display: inline-block;
+
+      text-decoration: none;
+
+      padding: 14px 34px;
+
+      border-radius: 50px;
+
+      font-weight: 700;
+
+      font-size: 1rem;
+
+      color: #ffffff;
+
+      background:
+        linear-gradient(
+          120deg,
+          #f7a8d6,
+          #c9a8f7
+        );
+
+      box-shadow:
+        0 8px 20px
+        rgba(230, 150, 210, 0.5);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .link-badge:hover {
+
+      transform:
+        translateY(-5px)
+        scale(1.05);
+
+      box-shadow:
+        0 14px 30px
+        rgba(230, 150, 210, 0.7);
+    }
+
+
+    /* =====================================
+       FOOTER
+    ===================================== */
+
+    .site-footer {
+
+      text-align: center;
+
+      margin-top: 70px;
+
+      font-size: 0.9rem;
+
+      color: #9a7fa3;
+
+      line-height: 1.8;
+    }
+
+    .site-footer .heart {
+
+      color: #e08fc0;
+    }
+
+
+    /* =====================================
+       POPUP / MODAL
+    ===================================== */
+
+    .modal {
+
+      display: none;
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 999;
+
+      background:
+        rgba(91, 75, 106, 0.48);
+
+      backdrop-filter: blur(9px);
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+    }
+
+    .modal.show {
+
+      display: flex;
+    }
+
+    .modal-content {
+
+      position: relative;
+
+      max-width: 620px;
+
+      width: 100%;
+
+      max-height: 85vh;
+
+      overflow-y: auto;
+
+      padding: 42px 38px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff8fc,
+          #f5edff
+        );
+
+      border-radius: 32px;
+
+      box-shadow:
+        0 25px 70px
+        rgba(120, 80, 140, 0.4);
+
+      text-align: center;
+
+      animation:
+        popup 0.35s ease;
+    }
+
+    @keyframes popup {
+
+      from {
+
+        opacity: 0;
+
+        transform:
+          scale(0.78)
+          translateY(30px);
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform:
+          scale(1)
+          translateY(0);
+      }
+
+    }
+
+    .modal-icon {
+
+      font-size: 3rem;
+
+      margin-bottom: 10px;
+    }
+
+    .modal-content h2 {
+
+      color: #a05c9e;
+
+      font-size: 2rem;
+
+      margin-bottom: 22px;
+    }
+
+    .modal-content p {
+
+      color: #6b5876;
+
+      font-size: 1rem;
+
+      line-height: 1.7;
+
+      margin-bottom: 17px;
+    }
+
+    .modal-highlight {
+
+      margin-top: 25px;
+
+      padding: 18px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          120deg,
+          #ffe5f1,
+          #eee2ff
+        );
+
+      color: #8c5b98 !important;
+
+      font-weight: 700;
+    }
+
+    .modal-ending {
+
+      font-family:
+        'Dancing Script',
+        cursive;
+
+      font-size: 1.45rem !important;
+
+      color: #b06bb5 !important;
+
+      margin-top: 25px;
+    }
+
+    /* Close Button */
+
+    .close-btn {
+
+      position: absolute;
+
+      top: 15px;
+
+      right: 20px;
+
+      width: 40px;
+
+      height: 40px;
+
+      border: none;
+
+      border-radius: 50%;
+
+      background: #ffe0f0;
+
+      color: #a05c9e;
+
+      font-size: 1.7rem;
+
+      cursor: pointer;
+
+      transition: 0.25s;
+    }
+
+    .close-btn:hover {
+
+      transform:
+        rotate(90deg)
+        scale(1.1);
+
+      background: #ffd0e8;
+    }
+
+
+    /* =====================================
+       MEMORY LIST
+    ===================================== */
+
+    .memory-list {
+
+      text-align: left;
+
+      margin-top: 10px;
+    }
+
+    .memory-item {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 14px;
+
+      padding: 15px;
+
+      margin-bottom: 12px;
+
+      border-radius: 18px;
+
+      background:
+        rgba(255, 255, 255, 0.65);
+    }
+
+    .memory-item span {
+
+      font-size: 1.5rem;
+    }
+
+    .memory-item p {
+
+      margin: 0;
+
+      font-size: 0.92rem;
+    }
+
+
+    /* =====================================
+       CODE JOURNEY
+    ===================================== */
+
+    .code-step {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 15px;
+
+      text-align: left;
+
+      margin-bottom: 18px;
+
+      padding: 16px;
+
+      border-radius: 18px;
+
+      background:
+        rgba(255, 255, 255, 0.65);
+    }
+
+    .code-number {
+
+      min-width: 35px;
+
+      height: 35px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f7a8d6,
+          #c9a8f7
+        );
+
+      color: white;
+
+      font-weight: 700;
+    }
+
+    .code-step h3 {
+
+      color: #a05c9e;
+
+      margin-bottom: 5px;
+    }
+
+    .code-step p {
+
+      margin: 0;
+
+      font-size: 0.9rem;
+    }
+
+
+    /* =====================================
+       RESPONSIVE
+    ===================================== */
+
+    @media (max-width: 600px) {
+
+      .page-wrap {
+
+        padding:
+          40px 16px 60px;
+      }
+
+      .site-header h1 {
+
+        font-size: 1.9rem;
+      }
+
+      .subtitle {
+
+        font-size: 1.35rem;
+      }
+
+      .team-badge {
+
+        font-size: 0.9rem;
+
+        padding:
+          9px 18px;
+      }
+
+      .story-card {
+
+        width: 90%;
+      }
+
+      .button-row {
+
+        gap: 12px;
+      }
+
+      .pastel-btn {
+
+        width: 90%;
+      }
+
+      .gallery-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .modal-content {
+
+        padding:
+          38px 22px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- ==================================
+       FLOATING DECORATIONS
+  =================================== -->
+
+  <div class="float-item f1">✨</div>
+  <div class="float-item f2">💗</div>
+  <div class="float-item f3">🌸</div>
+  <div class="float-item f4">⭐</div>
+  <div class="float-item f5">💫</div>
+  <div class="float-item f6">🎀</div>
+  <div class="float-item f7">☁️</div>
+  <div class="float-item f8">💻</div>
+
+
+  <div class="page-wrap">
+
+
+    <!-- ==================================
+         HEADER
+    =================================== -->
+
+    <header class="site-header">
+
+      <h1>
+        Our Perfect Day: The Overnight Hackathon
+      </h1>
+
+      <p class="subtitle">
+        A night we'll never forget ✨
+      </p>
+
+      <div class="team-badge">
+        💻 Team: 404 Boys Not Found
+      </div>
+
+    </header>
+
+
+    <!-- ==================================
+         STORY SECTION
+    =================================== -->
+
+    <section class="story-section">
+
+      <h2 class="section-title">
+        How the Night Unfolded 🌙
+      </h2>
+
+
+      <div class="story-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="story-card">
+
+          <span class="story-icon">
+            🚀
+          </span>
+
+          <h3>
+            The Leap of Faith
+          </h3>
+
+          <p>
+            We stepped way out of our comfort zones,
+            barely knowing how to code, and jumped in
+            anyway to build something cool together.
+          </p>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="story-card">
+
+          <span class="story-icon">
+            🍕
+          </span>
+
+          <h3>
+            Midnight Fuel
+          </h3>
+
+          <p>
+            The legendary late-night pizza party,
+            inside jokes, endless laughter, and
+            powering through the night on caffeine
+            and hope.
+          </p>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="story-card">
+
+          <span class="story-icon">
+            🌅
+          </span>
+
+          <h3>
+            The Tired Smiles
+          </h3>
+
+          <p>
+            Completely exhausted by sunrise,
+            eyes barely open, but insanely proud
+            of our team and everything we managed
+            to build.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================
+           BUTTONS
+      =================================== -->
+
+      <div class="button-row">
+
+
+        <!-- OUR STORY -->
+
+        <button
+          class="pastel-btn"
+          onclick="openModal('storyModal')"
+        >
+          ✨ Our Story
+        </button>
+
+
+        <!-- BEST MEMORIES -->
+
+        <button
+          class="pastel-btn"
+          onclick="openModal('memoryModal')"
+        >
+          💗 Best Memories
+        </button>
+
+
+        <!-- BEHIND THE CODE -->
+
+        <button
+          class="pastel-btn"
+          onclick="openModal('codeModal')"
+        >
+          🌙 Behind the Code
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================
+         MEMORIES GALLERY
+    =================================== -->
+
+    <section
+      class="gallery-section"
+      id="memories"
+    >
+
+      <h2>
+        Memories Gallery 📸
+      </h2>
+
+
+      <div class="gallery-grid">
+
+
+        <div class="gallery-card">
+
+          <span class="emoji">
+            🧑‍💻
+          </span>
+
+          <span class="label">
+            Late Night Coding
+          </span>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+          <span class="emoji">
+            🍕
+          </span>
+
+          <span class="label">
+            Pizza Break
+          </span>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+          <span class="emoji">
+            😂
+          </span>
+
+          <span class="label">
+            Laughing Fits
+          </span>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+          <span class="emoji">
+            🌅
+          </span>
+
+          <span class="label">
+            Sunrise Finish
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================
+         PROJECT SECTION
+    =================================== -->
+
+    <section
+      class="souvenir-section"
+      id="project"
+    >
+
+      <h2>
+        Take Home a Piece of the Night 🎀
+      </h2>
+
+      <p>
+        Check out where "404 Boys Not Found"
+        made it happen!
+      </p>
+
+
+      <a
+        href="https://github.com/anukriti24-code/javacode"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-badge"
+      >
+        🏅 View Our Hackathon Project
+      </a>
+
+    </section>
+
+
+    <!-- ==================================
+         FOOTER
+    =================================== -->
+
+    <footer class="site-footer">
+
+      <p>
+        Made with
+        <span class="heart">💗</span>
+        by 404 Boys Not Found
+      </p>
+
+      <p>
+        Our first overnight hackathon,
+        forever our perfect day. ✨
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <!-- =====================================================
+       POPUP 1 — OUR STORY
+  ===================================================== -->
+
+  <div
+    class="modal"
+    id="storyModal"
+  >
+
+    <div class="modal-content">
+
+
+      <button
+        class="close-btn"
+        onclick="closeModal('storyModal')"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-icon">
+        ✨
+      </div>
+
+
+      <h2>
+        Our Story 💗
+      </h2>
+
+
+      <p>
+        It all started with four people, one crazy idea,
+        and absolutely no idea how the night was going to end.
+      </p>
+
+
+      <p>
+        We entered the overnight hackathon thinking,
+        "Let's just give it a shot." None of us knew exactly
+        what we were doing, but somehow that made the whole
+        experience even more fun.
+      </p>
+
+
+      <p>
+        From random bugs and last-minute changes to pizza
+        breaks, terrible jokes, and moments of
+        "BRO, IT WORKED!", every little moment became
+        a memory.
+      </p>
+
+
+      <p>
+        We may not have built the most perfect project,
+        but we built something together — and survived
+        an entire night doing it. 🌙💻
+      </p>
+
+
+      <p class="modal-ending">
+        Maybe the real achievement wasn't the project...
+        it was the memories we made along the way. 🥹💗
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       POPUP 2 — BEST MEMORIES
+  ===================================================== -->
+
+  <div
+    class="modal"
+    id="memoryModal"
+  >
+
+    <div class="modal-content">
+
+
+      <button
+        class="close-btn"
+        onclick="closeModal('memoryModal')"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-icon">
+        💗
+      </div>
+
+
+      <h2>
+        Best Memories 📸
+      </h2>
+
+
+      <p>
+        Some moments from the night that we'll probably
+        talk about for years. 😂
+      </p>
+
+
+      <div class="memory-list">
+
+
+        <div class="memory-item">
+
+          <span>🍕</span>
+
+          <p>
+            <strong>The Pizza Break:</strong>
+            Because apparently every coding problem
+            becomes easier after pizza.
+          </p>
+
+        </div>
+
+
+        <div class="memory-item">
+
+          <span>😂</span>
+
+          <p>
+            <strong>The Random Laughs:</strong>
+            Half the night was coding and the other half
+            was laughing at things that weren't even funny.
+          </p>
+
+        </div>
+
+
+        <div class="memory-item">
+
+          <span>💻</span>
+
+          <p>
+            <strong>"BRO, IT WORKED!":</strong>
+            That magical moment when the code finally
+            worked after trying the same thing five times.
+          </p>
+
+        </div>
+
+
+        <div class="memory-item">
+
+          <span>☕</span>
+
+          <p>
+            <strong>Caffeine Mode:</strong>
+            At some point we stopped knowing whether
+            we were tired or just running on caffeine.
+          </p>
+
+        </div>
+
+
+        <div class="memory-item">
+
+          <span>🌅</span>
+
+          <p>
+            <strong>The Sunrise:</strong>
+            Watching the night turn into morning while
+            realizing we actually made it through.
+          </p>
+
+        </div>
+
+
+        <div class="memory-item">
+
+          <span>🥹</span>
+
+          <p>
+            <strong>The Final Moment:</strong>
+            Tired eyes, messy code, zero sleep —
+            but one extremely happy team.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p class="modal-ending">
+        These weren't just memories...
+        they were the best part of the hackathon. 💗
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       POPUP 3 — BEHIND THE CODE
+  ===================================================== -->
+
+  <div
+    class="modal"
+    id="codeModal"
+  >
+
+    <div class="modal-content">
+
+
+      <button
+        class="close-btn"
+        onclick="closeModal('codeModal')"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-icon">
+        🌙
+      </div>
+
+
+      <h2>
+        Behind the Code 💻
+      </h2>
+
+
+      <p>
+        What really happened behind the scenes?
+        Well... it wasn't exactly as smooth as this
+        website makes it look. 😂
+      </p>
+
+
+      <div class="code-step">
+
+
+        <div class="code-number">
+          1
+        </div>
+
+
+        <div>
+
+          <h3>
+            The Idea 💡
+          </h3>
+
+          <p>
+            We started with a simple idea and tried to
+            turn it into something useful while racing
+            against the clock.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="code-step">
+
+
+        <div class="code-number">
+          2
+        </div>
+
+
+        <div>
+
+          <h3>
+            The Coding 💻
+          </h3>
+
+          <p>
+            We divided the work, started coding,
+            searched for solutions, and slowly
+            watched the project come together.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="code-step">
+
+
+        <div class="code-number">
+          3
+        </div>
+
+
+        <div>
+
+          <h3>
+            The Bugs 🐛
+          </h3>
+
+          <p>
+            Bugs appeared everywhere. Fixing one bug
+            somehow created another. At one point,
+            even we didn't know what was happening.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="code-step">
+
+
+        <div class="code-number">
+          4
+        </div>
+
+
+        <div>
+
+          <h3>
+            The Debugging 🔍
+          </h3>
+
+          <p>
+            We kept testing, debugging, changing things,
+            breaking things again, and finally getting
+            something that actually worked.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="code-step">
+
+
+        <div class="code-number">
+          5
+        </div>
+
+
+        <div>
+
+          <h3>
+            The Final Build 🚀
+          </h3>
+
+          <p>
+            After hours of coding, confusion, laughter,
+            and very little sleep, we finally had
+            something we could proudly call our project.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p class="modal-highlight">
+        We didn't just write code that night.
+        We learned how to work together, solve problems,
+        stay calm when things broke, and keep going. ❤️
+      </p>
+
+
+      <p class="modal-ending">
+        404 Boys Not Found —
+        but somehow, the code was found. 😎💻
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==================================
+       JAVASCRIPT
+  =================================== -->
+
+  <script>
+
+
+    /* ==============================
+       OPEN ANY MODAL
+    ============================== */
+
+    function openModal(id) {
+
+      const modal =
+        document.getElementById(id);
+
+      modal.classList.add("show");
+
+      document.body.style.overflow = "hidden";
+
+    }
+
+
+    /* ==============================
+       CLOSE ANY MODAL
+    ============================== */
+
+    function closeModal(id) {
+
+      const modal =
+        document.getElementById(id);
+
+      modal.classList.remove("show");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    /* ==============================
+       CLOSE WHEN CLICKING OUTSIDE
+    ============================== */
+
+    document
+      .querySelectorAll(".modal")
+      .forEach(function(modal) {
+
+        modal.addEventListener(
+          "click",
+          function(event) {
+
+            if (event.target === modal) {
+
+              closeModal(modal.id);
+
+            }
+
+          }
+        );
+
+      });
+
+
+    /* ==============================
+       ESC KEY CLOSE
+    ============================== */
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (event.key === "Escape") {
+
+          document
+            .querySelectorAll(".modal.show")
+            .forEach(function(modal) {
+
+              closeModal(modal.id);
+
+            });
+
+        }
+
+      }
+    );
+
+  </script>
+
+
+</body>
+
+</html>
+```
